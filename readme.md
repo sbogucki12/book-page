@@ -26,21 +26,46 @@ This site is designed to be deployed on Netlify for easy form handling. Follow t
 4. Connect your repository and deploy
 5. Forms will automatically be set up based on the HTML markup
 
-## Netlify Form Settings
+## Netlify Form Settings & Auto-Response
 
-After deployment, configure your form settings in the Netlify dashboard:
+This site includes automatic email responses to form submissions. Here's how it works:
 
-1. Go to Forms → Form Notifications to set up email notifications
-2. The success redirect page is already configured in the form's `action` attribute and the `netlify.toml` file
-3. To customize the download link in the success page:
-   - Update the href in the download button in `success.html`
-   - You can link directly to your manuscript file or to a file stored in Netlify or another service
+1. When someone submits the form, they'll be redirected to the success page
+2. A Netlify Function will automatically send them an email with the download link
+3. You'll also receive a notification about the submission
+
+### Setting Up the Auto-Response Email
+
+To configure the email sending:
+
+1. In your Netlify dashboard, go to **Site settings → Environment variables**
+2. Add the following environment variables:
+   - `EMAIL_HOST` (e.g., smtp.gmail.com)
+   - `EMAIL_PORT` (e.g., 587)
+   - `EMAIL_SECURE` (true or false)
+   - `EMAIL_USER` (your email address)
+   - `EMAIL_PASS` (your email app password)
+   - `SITE_URL` (your Netlify site URL)
+
+### For Gmail Users:
+You'll need to create an "App Password":
+1. Go to your Google Account → Security
+2. Enable 2-Step Verification if not already enabled
+3. Go to App passwords
+4. Create a new app password for "Netlify"
+5. Use that password for the `EMAIL_PASS` environment variable
+
+### Testing the Auto-Response
+After setting up:
+1. Submit the form with your own email address
+2. Check that you receive both the notification and the auto-response
+3. Verify the download link in the email works correctly
 
 ### Handling Form Submissions
 Form submissions will automatically appear in your Netlify dashboard under the "Forms" section. You can:
 - View all submissions
 - Export them as CSV
-- Set up email notifications
+- Set up additional email notifications
 - Connect to Zapier or other services for additional integrations
 
 ## Customization
