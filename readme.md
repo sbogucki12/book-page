@@ -31,9 +31,17 @@ This site is designed to be deployed on Netlify for easy form handling. Follow t
 After deployment, configure your form settings in the Netlify dashboard:
 
 1. Go to Forms → Form Notifications to set up email notifications
-2. Create a success redirect page for after form submission:
-   - Go to Site Settings → Forms → Form Submissions
-   - Add a success redirect to a page that contains your download link
+2. The success redirect page is already configured in the form's `action` attribute and the `netlify.toml` file
+3. To customize the download link in the success page:
+   - Update the href in the download button in `success.html`
+   - You can link directly to your manuscript file or to a file stored in Netlify or another service
+
+### Handling Form Submissions
+Form submissions will automatically appear in your Netlify dashboard under the "Forms" section. You can:
+- View all submissions
+- Export them as CSV
+- Set up email notifications
+- Connect to Zapier or other services for additional integrations
 
 ## Customization
 
@@ -57,10 +65,12 @@ To run this site locally:
 ## File Structure
 
 - `index.html` - Main HTML file containing the page structure
+- `success.html` - Thank you page displayed after form submission
 - `styles.css` - CSS styles for the site
 - `script.js` - JavaScript for form validation and interaction
 - `favicon.svg` - Vector favicon (book icon)
 - `favicon.png` - Fallback PNG favicon for older browsers
+- `netlify.toml` - Netlify configuration for form handling and redirects
 - `README.md` - Documentation (this file)
 - `.gitignore` - Git ignore file
 
