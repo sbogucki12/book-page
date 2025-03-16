@@ -69,3 +69,4 @@ MIT
 ## Credits
 
 - Fonts: Google Fonts (Playfair Display, Merriweather, Montserrat)
+- Developer: [Steve Bogucki](https://www.linkedin.com/in/sbogucki12/)
