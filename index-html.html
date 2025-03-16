@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Title - Coming Soon</title>
+    <!-- Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Merriweather:wght@300;400&family=Montserrat:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header-ribbon">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#" style="color: white; text-decoration: none; font-weight: 600;">Author Name</a>
+            </div>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </header>
+    
+    <main class="main-container">
+        <h1 class="book-title">Book Title</h1>
+        <p class="book-subtitle">A compelling journey that will change your perspective</p>
+        
+        <div style="margin-top: -20px; margin-bottom: 40px;">
+            <span style="color: var(--accent-yellow);">★</span>
+            <span style="color: var(--accent-yellow);">★</span>
+            <span style="color: var(--accent-yellow);">★</span>
+            <span style="color: var(--accent-yellow);">★</span>
+            <span style="color: var(--accent-yellow);">★</span>
+            <span style="font-size: 14px; color: #5f6368; margin-left: 8px;">Coming Soon</span>
+        </div>
+        
+        <div class="book-excerpt">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        </div>
+        
+        <div class="form-container">
+            <h2 class="form-title">Download the Draft Manuscript</h2>
+            <p>Get early access to the manuscript by entering your email below.</p>
+            <div style="margin: 15px 0; text-align: center;">
+                <!-- Simple document emoji -->
+                <span style="font-size: 42px; display: inline-block;">
+                    📄
+                </span>
+            </div>
+            
+            <form id="download-form" name="download-form" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+                <!-- Honeypot field to catch bots -->
+                <p style="display: none;">
+                    <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                </p>
+                
+                <!-- Required for Netlify Forms -->
+                <input type="hidden" name="form-name" value="download-form" />
+                
+                <div class="form-group">
+                    <input type="email" id="email" name="email" class="form-input" placeholder="Your email address" required>
+                    <div id="email-error" class="error-message">Please enter a valid email address.</div>
+                </div>
+                
+                <p class="form-privacy">I won't share your email address with anyone else. You may receive occasional updates about the book.</p>
+                
+                <button type="submit" class="button">Download Manuscript</button>
+            </form>
+            
+            <div id="success-message" class="success-message">
+                Thank you! Check your email for the download link.
+            </div>
+        </div>
+        
+        <div>
+            <h3>Stay Updated</h3>
+            <p>Follow the journey as this book comes to life. Get exclusive insights and be the first to know about the official release.</p>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <p>&copy; 2025 Author Name. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
