@@ -57,6 +57,9 @@ pids
 *.epub
 *.mobi
 
+# But allow the specific manuscript file
+!The Ghosts We Carry.pdf
+
 # Backup files
 *.bak
 *~
