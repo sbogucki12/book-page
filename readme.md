@@ -59,6 +59,8 @@ To run this site locally:
 - `index.html` - Main HTML file containing the page structure
 - `styles.css` - CSS styles for the site
 - `script.js` - JavaScript for form validation and interaction
+- `favicon.svg` - Vector favicon (book icon)
+- `favicon.png` - Fallback PNG favicon for older browsers
 - `README.md` - Documentation (this file)
 - `.gitignore` - Git ignore file
 
