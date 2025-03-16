@@ -1,6 +1,6 @@
-# Book Landing Page
+# The Ghosts We Carry - Landing Page
 
-A minimal, sleek website for promoting and distributing a book manuscript. This landing page allows visitors to access a draft of the manuscript by submitting their email address.
+A minimal, sleek website for promoting and distributing "The Ghosts We Carry" manuscript. This landing page allows visitors to access a draft of the manuscript by submitting their email address.
 
 ## Features
 

@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <meta name="description" content="Download the draft manuscript of the upcoming book. Enter your email to get early access.">
-    <title>BOGOODSKI - book</title>
+    <meta name="description" content="Download the draft manuscript of The Ghosts We Carry. Enter your email to get early access.">
+    <title>BOGOODSKI - The Ghosts We Carry</title>
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="icon" type="image/png" href="favicon.png">
@@ -21,14 +21,14 @@
             </div>
             <div class="nav-links">
                 <a href="#">Home</a>
-                <a href="#">About</a>
+                <a href="https://www.instagram.com/bogoodskiruns/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
                 <a href="#">Contact</a>
             </div>
         </div>
     </header>
     
     <main class="main-container">
-        <h1 class="book-title">Book Title</h1>
+        <h1 class="book-title">The Ghosts We Carry</h1>
         <p class="book-subtitle">A compelling journey that will change your perspective</p>
         
         <div class="book-excerpt">
@@ -40,6 +40,7 @@
         <div class="form-container">
             <h2 class="form-title">Download the Draft Manuscript</h2>
             <p>Get early access to the manuscript by entering your email below.</p>
+            <p class="update-date">Last Updated: March 16, 2025</p>
             <div style="margin: 15px 0; text-align: center;">
                 <!-- Simple document emoji -->
                 <span style="font-size: 42px; display: inline-block;">
@@ -47,7 +48,7 @@
                 </span>
             </div>
             
-            <form id="download-form" name="download-form" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" netlify>
+            <form id="download-form" name="download-form" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/success.html">
                 <!-- Honeypot field to catch bots -->
                 <p style="display: none;">
                     <label>Don't fill this out if you're human: <input name="bot-field" /></label>
