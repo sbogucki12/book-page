@@ -19,6 +19,18 @@ body {
     line-height: 1.6;
 }
 
+/* Enable smooth scrolling for better mobile experience */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Improve tap target sizes on mobile */
+button, 
+input, 
+a {
+    touch-action: manipulation;
+}
+
 .header-ribbon {
     background-color: var(--primary-blue);
     padding: 12px 0;
@@ -99,7 +111,7 @@ body {
 }
 
 .book-excerpt:before {
-    content: """;
+    content: "\201C";
     font-family: 'Playfair Display', serif;
     position: absolute;
     top: -30px;
@@ -227,5 +239,68 @@ body {
     
     .book-subtitle {
         font-size: 18px;
+    }
+    
+    .form-container {
+        padding: 25px;
+    }
+    
+    .book-excerpt {
+        padding: 25px;
+    }
+    
+    .nav-links a {
+        margin-left: 15px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .book-title {
+        font-size: 30px;
+    }
+    
+    .book-subtitle {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    
+    .book-title:after {
+        width: 80px;
+    }
+    
+    .form-container, .book-excerpt {
+        padding: 20px;
+        margin: 30px 0;
+    }
+    
+    .form-title {
+        font-size: 24px;
+    }
+    
+    .book-excerpt:before {
+        font-size: 60px;
+        top: -25px;
+    }
+    
+    .button {
+        width: 100%;
+        padding: 12px;
+    }
+    
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .nav-links {
+        margin-top: 5px;
+    }
+    
+    .nav-links a {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 12px;
     }
 }
