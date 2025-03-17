@@ -304,3 +304,200 @@ a {
         font-size: 12px;
     }
 }
+/* Add these styles to your styles.css file */
+
+/* Update container on index page */
+.update-container {
+    background-color: var(--light-gray);
+    border-radius: 12px;
+    padding: 30px;
+    margin: 40px 0;
+    text-align: center;
+    border: 1px solid var(--border-gray);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.update-info {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.update-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: var(--primary-blue);
+    margin-bottom: 15px;
+}
+
+.update-text {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.button-secondary {
+    background-color: white;
+    color: var(--primary-blue);
+    border: 1px solid var(--primary-blue);
+    box-shadow: 0 4px 8px rgba(26,115,232,0.15);
+    margin-top: 15px;
+}
+
+.button-secondary:hover {
+    background-color: #f1f7fe;
+    box-shadow: 0 6px 12px rgba(26,115,232,0.2);
+}
+
+/* Update container on index page */
+.update-container {
+    background-color: var(--light-gray);
+    border-radius: 12px;
+    padding: 30px;
+    margin: 40px 0;
+    text-align: center;
+    border: 1px solid var(--border-gray);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.update-info {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.update-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: var(--primary-blue);
+    margin-bottom: 15px;
+}
+
+.update-text {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.update-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.button-secondary {
+    background-color: white;
+    color: var(--primary-blue);
+    border: 1px solid var(--primary-blue);
+    box-shadow: 0 4px 8px rgba(26,115,232,0.15);
+    margin-top: 15px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button-secondary:hover {
+    background-color: #f1f7fe;
+    box-shadow: 0 6px 12px rgba(26,115,232,0.2);
+}
+
+/* Changelog page styles */
+.changelog-container {
+    background-color: white;
+    border: 1px solid var(--border-gray);
+    border-radius: 12px;
+    padding: 40px;
+    margin: 30px 0;
+    text-align: left;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.changelog-entry {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--border-gray);
+}
+
+.changelog-entry:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.changelog-date {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    color: var(--primary-blue);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--accent-yellow);
+    display: inline-block;
+}
+
+.changelog-intro {
+    font-family: 'Merriweather', serif;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    color: #3c4043;
+}
+
+.changelog-section {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #202124;
+    margin: 25px 0 15px;
+}
+
+.changelog-content p {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #3c4043;
+}
+
+.changelog-conclusion {
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.back-button-container {
+    margin: 40px 0;
+    text-align: center;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+    .changelog-container {
+        padding: 25px;
+    }
+    
+    .changelog-date {
+        font-size: 24px;
+    }
+    
+    .changelog-section {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .changelog-container {
+        padding: 20px;
+    }
+    
+    .changelog-date {
+        font-size: 22px;
+    }
+    
+    .changelog-section {
+        font-size: 16px;
+    }
+    
+    .changelog-content p {
+        font-size: 15px;
+    }
+}

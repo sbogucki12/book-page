@@ -8,6 +8,8 @@ A minimal, sleek website for promoting and distributing "The Ghosts We Carry" ma
 - Email collection form with validation
 - Netlify form integration with spam protection
 - Mobile-friendly layout
+- Detailed changelog page for tracking manuscript updates
+- Last update notification on homepage
 
 ## Technologies Used
 
@@ -74,13 +76,19 @@ Form submissions will automatically appear in your Netlify dashboard under the "
 - Replace placeholder text and links in the navigation
 - Add your manuscript file for download
 - Update the author information in the footer
+- Modify the changelog.html to document your manuscript's evolution
+- Update the last revision date and description on the homepage
 
 ## Local Development
 
 To run this site locally:
 
 1. Clone the repository
-2. Open `index.html` in your web browser
+2. Open `index.html` in your web browser or use one of these methods:
+   - Python 3: `python -m http.server`
+   - Python 2: `python -m SimpleHTTPServer`
+   - Node.js: Install http-server with `npm install -g http-server` and run `http-server`
+   - VS Code: Use the "Live Server" extension
 3. For form testing, use Netlify CLI:
    ```
    npm install netlify-cli -g
@@ -91,6 +99,7 @@ To run this site locally:
 
 - `index.html` - Main HTML file containing the page structure
 - `success.html` - Thank you page displayed after form submission
+- `changelog.html` - Detailed page showing manuscript revisions and updates
 - `styles.css` - CSS styles for the site
 - `script.js` - JavaScript for form validation and interaction
 - `favicon.svg` - Vector favicon (book icon)
@@ -98,6 +107,7 @@ To run this site locally:
 - `netlify.toml` - Netlify configuration for form handling and redirects
 - `README.md` - Documentation (this file)
 - `.gitignore` - Git ignore file
+- `sitemap.xml` - XML sitemap for improved SEO
 
 ## License
 
