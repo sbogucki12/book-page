@@ -57,8 +57,12 @@ pids
 *.epub
 *.mobi
 
-# But allow the specific manuscript file
+# But allow specific files
 !The Ghosts We Carry.pdf
+!robots.txt
+!sitemap.xml
+!.gitignore
+!README.md
 
 # Backup files
 *.bak

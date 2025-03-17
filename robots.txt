@@ -1,0 +1,19 @@
+# Allow all web crawlers to access all content
+User-agent: *
+Allow: /
+
+# Sitemap (you can add this if you create one later)
+# Sitemap: https://bogoodski-book.netlify.app/sitemap.xml
+
+# Specific AI crawlers instructions
+User-agent: GPTBot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
