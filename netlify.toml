@@ -1,0 +1,29 @@
+[build]
+  publish = "/"
+  functions = "netlify/functions"
+
+# Form handling
+[forms.download-form]
+  success_url = "/success.html"
+
+# Configure form notifications to trigger the auto-response function
+[[forms.download-form.notifications]]
+  event = "submission-created"
+  handler = "form-submission"
+
+# Environment variables placeholder (actual values set in Netlify dashboard)
+[context.production.environment]
+  SITE_URL = "https://bogoodski-book.netlify.app"
+
+# Handle specific redirects
+[[redirects]]
+  from = "/form-submit-success"
+  to = "/success.html"
+  status = 301
+  force = true
+
+# Handle 404 errors
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 404
