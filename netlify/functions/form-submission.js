@@ -100,7 +100,7 @@ exports.handler = async (event, context) => {
               .button {
                 display: inline-block;
                 background-color: #1a73e8;
-                color: white;
+                color: white !important;
                 text-decoration: none;
                 padding: 10px 20px;
                 margin: 20px 0;
@@ -125,10 +125,12 @@ exports.handler = async (event, context) => {
               
               <p>Thank you for your interest in "The Ghosts We Carry". Your download is ready!</p>
               
+              <p><b>Note: </b><i>This is a draft of the manuscript, updated on March 16, 2025.</i></p>
+              
               <p>Click the button below to download your copy:</p>
               
               <p style="text-align: center;">
-                <a href="${process.env.SITE_URL}/The%20Ghosts%20We%20Carry.pdf" class="button">Download Now</a>
+                <a href="${process.env.SITE_URL}/The%20Ghosts%20We%20Carry.pdf" style="display: inline-block; background-color: #1a73e8; color: white !important; text-decoration: none; padding: 10px 20px; margin: 20px 0; border-radius: 4px; font-weight: bold;">Download Now</a>
               </p>
               
               <p>If the button doesn't work, you can copy and paste this link into your browser:</p>
