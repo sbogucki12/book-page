@@ -31,6 +31,22 @@ a {
     touch-action: manipulation;
 }
 
+.button {
+    text-decoration: none !important;
+}
+
+a.button {
+    text-decoration: none !important;
+}
+
+.button-secondary {
+    text-decoration: none !important;
+}
+
+a.button-secondary {
+    text-decoration: none !important;
+}
+
 .header-ribbon {
     background-color: var(--primary-blue);
     padding: 12px 0;

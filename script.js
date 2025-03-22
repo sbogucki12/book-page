@@ -40,3 +40,13 @@ document.addEventListener('DOMContentLoaded', function() {
         emailError.style.display = 'none';
     });
 });
+
+if (document.getElementById('download-form')) {
+    document.getElementById('download-form').addEventListener('submit', function(e) {
+      if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+        e.preventDefault();
+        // Simulate form submission locally
+        window.location.href = '/success.html';
+      }
+    });
+  }

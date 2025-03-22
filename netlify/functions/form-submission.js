@@ -4,9 +4,11 @@
 const nodemailer = require("nodemailer");
 
 exports.handler = async (event, context) => {
-  // Log that function was triggered
+  // Enhanced logging
   console.log("Form submission function triggered");
   console.log("HTTP Method:", event.httpMethod);
+  console.log("Raw event body:", event.body);
+  console.log("Headers:", JSON.stringify(event.headers));
   
   // Only process POST requests
   if (event.httpMethod !== "POST") {
@@ -20,35 +22,58 @@ exports.handler = async (event, context) => {
   try {
     // Parse the payload
     const payload = JSON.parse(event.body);
-    console.log("Received payload type:", payload.event);
+    console.log("Full payload:", JSON.stringify(payload));
     
-    // Log submission data for debugging (without showing full details)
-    console.log("Payload structure:", Object.keys(payload));
-    if (payload.payload) console.log("Inner payload structure:", Object.keys(payload.payload));
-    
-    // Extract the email from the form submission
+    // Extract the email from the form submission (explore more paths)
     let email = "";
     
-    // Netlify webhook format changed over time, so check multiple paths
-    if (payload.payload && payload.payload.email) {
-      email = payload.payload.email;
-    } else if (payload.payload && payload.payload.data && payload.payload.data.email) {
-      email = payload.payload.data.email;
-    } else if (payload.data && payload.data.email) {
-      email = payload.data.email;
-    } else if (payload.email) {
+    // Try direct payload access first
+    if (payload.email) {
       email = payload.email;
+      console.log("Email found directly in payload");
+    } 
+    // Check payload.data path
+    else if (payload.data && payload.data.email) {
+      email = payload.data.email;
+      console.log("Email found in payload.data");
+    }
+    // Check payload.payload path
+    else if (payload.payload) {
+      if (payload.payload.email) {
+        email = payload.payload.email;
+        console.log("Email found in payload.payload");
+      } else if (payload.payload.data && payload.payload.data.email) {
+        email = payload.payload.data.email;
+        console.log("Email found in payload.payload.data");
+      }
+    }
+    // Check for form-parse structure
+    else if (payload.form && payload.form.email) {
+      email = payload.form.email;
+      console.log("Email found in payload.form");
     }
     
     console.log("Extracted email:", email);
     
-    // If no email was found, log and exit
+    // If no email was found through standard paths, attempt to parse form data
     if (!email) {
-      console.log("No email found in submission data");
-      return {
-        statusCode: 200,
-        body: JSON.stringify({ message: "No email found in submission" })
-      };
+      console.log("No email found in standard paths, attempting to parse form data");
+      
+      // Try to find any property that might contain email
+      const allProps = JSON.stringify(payload);
+      const emailRegex = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/;
+      const matches = allProps.match(emailRegex);
+      
+      if (matches && matches.length > 0) {
+        email = matches[0];
+        console.log("Email extracted through regex:", email);
+      } else {
+        console.log("No email address pattern found in payload");
+        return {
+          statusCode: 200,
+          body: JSON.stringify({ message: "No email found in submission" })
+        };
+      }
     }
     
     // Log environment variable presence (not values)
@@ -127,7 +152,7 @@ exports.handler = async (event, context) => {
               
               <p>Thank you for your interest in "The Ghosts We Carry". Your download is ready!</p>
               
-              <p><b>Note: </b><i>This is a draft of the manuscript, updated on March 17, 2025.</i></p>
+              <p><b>Note: </b><i>This is a draft of the manuscript, updated on March 22, 2025.</i></p>
               
               <p>Click the button below to download your copy:</p>
               

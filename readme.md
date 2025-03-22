@@ -10,6 +10,8 @@ A minimal, sleek website for promoting and distributing "The Ghosts We Carry" ma
 - Mobile-friendly layout
 - Detailed changelog page for tracking manuscript updates
 - Last update notification on homepage
+- New excerpt page with audio reading option
+- Archive/Earlier Updates button on changelog
 
 ## Technologies Used
 
@@ -78,6 +80,7 @@ Form submissions will automatically appear in your Netlify dashboard under the "
 - Update the author information in the footer
 - Modify the changelog.html to document your manuscript's evolution
 - Update the last revision date and description on the homepage
+- New excerpt page added with audio reading option
 
 ## Local Development
 
@@ -100,6 +103,7 @@ To run this site locally:
 - `index.html` - Main HTML file containing the page structure
 - `success.html` - Thank you page displayed after form submission
 - `changelog.html` - Detailed page showing manuscript revisions and updates
+- `excerpt.html` - New page with book excerpt and audio reading
 - `styles.css` - CSS styles for the site
 - `script.js` - JavaScript for form validation and interaction
 - `favicon.svg` - Vector favicon (book icon)
@@ -108,6 +112,13 @@ To run this site locally:
 - `README.md` - Documentation (this file)
 - `.gitignore` - Git ignore file
 - `sitemap.xml` - XML sitemap for improved SEO
+
+## Recent Updates
+
+- Updated last revision date to March 22, 2025
+- Added new excerpt page with audio reading option
+- Restructured changelog with Archive/Earlier Updates button
+- Updated homepage to invite readers to new excerpt page
 
 ## License
 
