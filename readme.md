@@ -115,10 +115,12 @@ To run this site locally:
 
 ## Recent Updates
 
-- Updated last revision date to March 22, 2025
-- Added new excerpt page with audio reading option
-- Restructured changelog with Archive/Earlier Updates button
-- Updated homepage to invite readers to new excerpt page
+- Updated last revision date to December 20, 2025
+- Major manuscript revision: reduced from 60 pages to 30 pages
+- Added new ending section for narrative closure
+- Eliminated redundancies and streamlined prose throughout
+- Archived previous changelog entry (April 7, 2025)
+- Updated all date references across the site
 
 ## License
 
