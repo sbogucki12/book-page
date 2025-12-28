@@ -115,11 +115,22 @@ To run this site locally:
 
 ## Recent Updates
 
-- Updated last revision date to December 20, 2025
-- Major manuscript revision: reduced from 60 pages to 30 pages
-- Added new ending section for narrative closure
-- Eliminated redundancies and streamlined prose throughout
-- Archived previous changelog entry (April 7, 2025)
+- Updated last revision date to December 27, 2025
+- Added new Part XV: Breaking Point - full account of 2017 mental health crisis and VA hospitalization
+- Renumbered Parts XV and XVI to become Parts XVI and XVII respectively
+- Major content enhancements across multiple sections:
+  - Part I: Expanded Melissa introduction and isolation themes
+  - Part III: Developed "Rescuer archetype" concept
+  - Part VI: Enhanced Latulippe as teacher of protection
+  - Part VIII: Added sexual performance anxiety with Dania
+  - Part XI: New parental observation sections and Thursday dinner scenes
+  - Part XIV: Substantially expanded Melissa relationship development
+  - Part XVI: Enhanced "Pattern of Surrender" as named enemy
+  - Part XVII: Strengthened love story and refusal to quit themes
+- Five major thematic developments: Rescuer Archetype, Pattern of Surrender as Named Force, Foreshadowing of Parenthood, Melissa as Central Figure, Sexual Dysfunction Context
+- Consistency updates: age correction (forty-one to forty-two), dog references (added Mama and Chonk), timeline clarifications (2017 crisis)
+- Approximately 10,700 words added across all sections
+- Archived previous changelog entry (December 20, 2025)
 - Updated all date references across the site
 
 ## License

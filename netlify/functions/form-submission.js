@@ -152,7 +152,7 @@ exports.handler = async (event, context) => {
               
               <p>Thank you for your interest in "The Ghosts We Carry". Your download is ready!</p>
               
-              <p><b>Note: </b><i>This is a draft of the manuscript, updated on December 20, 2025.</i></p>
+              <p><b>Note: </b><i>This is a draft of the manuscript, updated on December 27, 2025.</i></p>
               
               <p>Click the button below to download your copy:</p>
               
