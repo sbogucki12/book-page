@@ -115,7 +115,7 @@ To run this site locally:
 
 ## Recent Updates
 
-- Updated last revision date to December 27, 2025
+- Updated last revision date to January 11, 2026
 - Added new Part XV: Breaking Point - full account of 2017 mental health crisis and VA hospitalization
 - Renumbered Parts XV and XVI to become Parts XVI and XVII respectively
 - Major content enhancements across multiple sections:
